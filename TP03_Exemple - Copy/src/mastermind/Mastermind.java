@@ -8,6 +8,14 @@ public class Mastermind {
 	private int nombresEssais;
         public boolean win = false;
 	
+	private ArrayList<Color> inputColors new ArrayList<>();
+
+	public ArrayList<Color> getIntputColors() {
+		return intputColors;
+	}
+	public void setInputColors(Color color) {
+		inputColors.add(color);
+	}
 
 	/**
 	 * Constructeur Mastermind qui crée un jeu avec la solution au hasard
@@ -31,8 +39,15 @@ public class Mastermind {
 	 * @param uneSérie
 	 * @return
 	 */
-	public String essayer(Serie uneSérie) {
-		
+	public String essayer(Serie uneSerie) {
+		String output = "";
+                Color ;
+		for(int i = 0; i <= uneSerie.length(); i++){
+			if (uneSerie.get(i) == inputColors.get(i)){
+				output+= "N";
+			}
+		for(int j = 0; j <= uneSerie
+		}
 		return "";
 	}
 
