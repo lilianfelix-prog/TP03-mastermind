@@ -98,6 +98,7 @@ public class JeuController implements Initializable {
 
             Color c = getColor(id);
             pions[i].setFill(c);
+	    jeu.setInputColor(c);
             i++;
             if(i == 4){
                 System.out.println(i);
